@@ -42,9 +42,6 @@ goog.addDependency("../figwheel/main/testing.js", ['figwheel.main.testing'], ['g
 goog.addDependency("../guess_who/test_runner.js", ['guess_who.test_runner'], ['guess_who.core_test', 'cljs.core', 'figwheel.main.testing']);
 goog.addDependency("../guess_who/person_generator.js", ['guess_who.person_generator'], ['cljs.core']);
 goog.addDependency("../guess_who/framework.js", ['guess_who.framework'], ['cljs.core', 'clojure.string', 'guess_who.person_generator']);
-goog.addDependency("../cljs_test_display/favicon.js", ['cljs_test_display.favicon'], ['goog.dom', 'cljs.core', 'goog.object', 'clojure.string']);
-goog.addDependency("../cljs_test_display/notify.js", ['cljs_test_display.notify'], ['cljs.core', 'goog.object', 'cljs_test_display.favicon']);
-goog.addDependency("../cljs_test_display/core.js", ['cljs_test_display.core'], ['goog.dom', 'goog.dom.classlist', 'cljs_test_display.notify', 'cljs.core', 'cljs.test', 'goog.events.EventType', 'cljs_test_display.favicon', 'clojure.string', 'goog.events.KeyCodes', 'goog.events']);
 goog.addDependency("../reagent/debug.js", ['reagent.debug'], ['cljs.core']);
 goog.addDependency("../cljsjs/react/development/react.inc.js", ['react', 'cljsjs.react'], [], {'foreign-lib': true});
 goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['react_dom', 'cljsjs.react.dom'], ['react'], {'foreign-lib': true});
@@ -59,4 +56,4 @@ goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', '
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'react', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
 goog.addDependency("../guess_who/keycodes.js", ['guess_who.keycodes'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../guess_who/core.js", ['guess_who.core'], ['goog.dom', 'reagent.core', 'cljs.core', 'cljs.test', 'guess_who.keycodes', 'guess_who.framework', 'guess_who.person_generator']);
-goog.addDependency("../figwheel/main/generated/dev_auto_test_runner.js", ['figwheel.main.generated.dev_auto_test_runner'], ['guess_who.core_test', 'cljs.core', 'cljs.test', 'cljs_test_display.core']);
+goog.addDependency("../figwheel/main/generated/dev_auto_test_runner.js", ['figwheel.main.generated.dev_auto_test_runner'], ['cljs.core', 'figwheel.main.testing']);

@@ -11,15 +11,19 @@
 
 ;this returns the attribute from the key code map
 (defn decoder [s]
-  (let [hair (string/includes? s "hair")
+  (let [alex (string/includes? s "alex")
+        alfred (string/includes? s "alfred")
+        hair (string/includes? s "hair")
         eyes (string/includes? s "eyes")
         mustache (string/includes? s "mustache")
         ]
     (cond
+      (= alex true) {:attribute "alex" :full-input s}
+      (= alfred true) {:attribute "alfred" :full-input s}
       (= hair true) {:attribute "hair" :full-input s}
       (= eyes true) {:attribute "eyes" :full-input s}
       (= mustache true) {:attribute "mustache" :full-input s}
-      :else :unknown)
+      :else {:attribute "unknown" :full-input s})
     )
   )
 
@@ -40,17 +44,39 @@
     )
   )
 
+(defmethod interpret "alex" [m]
+  (cond
+    (string/includes? (get m :full-input) "alex") (assoc m :solve "alex")
+    )
+  )
+
+(defmethod interpret "alfred" [m]
+  (cond
+    (string/includes? (get m :full-input) "alfred") (assoc m :solve "alfred")
+    )
+  )
+
+(defmethod interpret "unknown" [m]
+  (assoc m :unknown "Please try again")
+  )
+
 ;Takes the interpreted map and the target map
 ;checks to see if the user guess the correct person
 ;checks to see if the question the user ask is right or wrong
 ;always returns a text response that we set as our
 (defn Dynamic-Answers [m targ]
   (if (string/includes? (get m :full-input) (get targ :name))
-    (#(str "Yes! You guessed it! the person is " %1) targ)
+    (#(str "Yes! You guessed it! the person is " %1) (get targ :name))
     (cond
       (contains? m :hair-type) (if (#(= (get m :hair-type) %) (get targ :hair-type))
                                  (#(str "Yes! the persons hair is " %1) (get targ :hair-type))
                                  (#(str "No, the persons hair is NOT " %1) (get m :hair-type)))
+
+      (contains? m :solve) (if (#(= (get m :solve) %) (get targ :name))
+                                 (#(str "Yes! the persons is " %1) (get targ :name))
+                                 (#(str "No, the persons is NOT " %1) (get m :solve)))
+
+      (contains? m :unknown) ("Unknown command")
       :else "unknown command")
     )
   )

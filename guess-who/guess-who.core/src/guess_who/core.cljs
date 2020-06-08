@@ -75,11 +75,11 @@
        }
       (for [i (range(count(:board @app-state)))
             j (range(count(:board @app-state)))]
-        [:rect {:width .95
-                :height .95
+        [:rect {:width .66
+                :height .89
                 :fill (if (zero? (get-in @app-state [:board j i]))
                         "rgba(100,200,10,0.0"
-                        "green")
+                        "white")
                 :x i
                 :y j
                 :on-click

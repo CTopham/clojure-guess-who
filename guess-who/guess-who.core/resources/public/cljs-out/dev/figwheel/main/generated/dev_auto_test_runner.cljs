@@ -1,5 +1,4 @@
 (ns figwheel.main.generated.dev-auto-test-runner
-  (:require [cljs.test :refer-macros [run-tests]]
-            [cljs-test-display.core] [guess-who.core-test]))
+  (:require [figwheel.main.testing]))
 
-  (run-tests (cljs-test-display.core/init! "app-auto-testing") (quote guess-who.core-test))
+  (figwheel.main.testing/no-auto-tests-display-message "app-auto-testing")
