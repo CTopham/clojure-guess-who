@@ -57,7 +57,7 @@
   )
 
 (defmethod interpret "unknown" [m]
-  (assoc m :unknown "Please try again")
+  (assoc m :unknown "Unknown command")
   )
 
 ;Takes the interpreted map and the target map
@@ -76,7 +76,7 @@
                                  (#(str "Yes! the persons is " %1) (get targ :name))
                                  (#(str "No, the persons is NOT " %1) (get m :solve)))
 
-      (contains? m :unknown) ("Unknown command")
-      :else "unknown command")
+      (contains? m :unknown) (str "Unknown command")
+      )
     )
   )

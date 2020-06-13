@@ -48,44 +48,59 @@
         ]
     (prn translated-word)
     (swap! output-state assoc-in [:answer] response)               ;this should return our response method
-    (swap! input-state assoc-in [:word-array] [])
-    (prn "reset")
-    (prn (get-in @input-state [:word-array]))
-
+    (swap! input-state assoc-in [:word-array] [])                  ;clearing the word array
+    (prn "reset")                                                  ;printing reset
+    (prn (get-in @input-state [:word-array]))                      ;should print an empty array
     )
   )
+
+;This is our chat input box at the top of the page. this creates the html
+;We collect all the keycodes the user is pressing and put them into a vector
+;then when the user hits enter we call our handle input method
+(defn chat-input []
+  [:input {:type :textarea
+           :value (kc/get-word (get-in @input-state [:word-array])) ;we could use this to erase input when we hit enter, but no backspace is in keycode
+           :on-key-press (fn [e]
+                           (swap! input-state update-in [:word-array] conj (.-charCode e)) ;append keycode pressed
+                           (println "key press" (.-charCode e))
+                           (if (= 13 (.-charCode e))       ;collect once we hit enter
+                             (handle-input)                 ;clears our word array
+                             ))}]
+  )
+
+
+(defn grid-html []
+  (into
+    [:svg
+     {:view-box"0 0 3 3"
+      :width 1000
+      :height 600
+      }
+     (for [i (range(count(:board @app-state)))
+           j (range(count(:board @app-state)))]
+       [:rect {:width .66
+               :height .89
+               :fill (if (zero? (get-in @app-state [:board j i]))
+                       "rgba(100,200,10,0.0"
+                       "white")
+               :x i
+               :y j
+               :on-click
+               (fn box-click [e]
+                 (prn :board j i)
+                 (swap! app-state assoc-in [:board j i]))}])])
+  )
+
+
 
 ;This is the core method that is building our grid
 (defn guess-who []
   [:center
    [:h1 (:text @app-state)]
-   [:input {:type :textarea
-            :on-key-press (fn [e]
-                            (swap! input-state update-in [:word-array] conj (.-charCode e)) ;append keycode pressed
-                            ;(println "key press" (.-charCode e))
-                            (if (= 13 (.-charCode e))       ;collect once we hit enter
-                              (handle-input)                 ;clears our word array
-                              ))}]
+    (chat-input)
    [:h3 (:answer @output-state)]
-   (into
-     [:svg
-      {:view-box"0 0 3 3"
-       :width 1000
-       :height 600
-       }
-      (for [i (range(count(:board @app-state)))
-            j (range(count(:board @app-state)))]
-        [:rect {:width .66
-                :height .89
-                :fill (if (zero? (get-in @app-state [:board j i]))
-                        "rgba(100,200,10,0.0"
-                        "white")
-                :x i
-                :y j
-                :on-click
-                (fn box-click [e]
-                  (prn :board j i)
-                  (swap! app-state assoc-in [:board j i]))}])])]
+   (grid-html)
+   ]
   )
 
 
