@@ -44,25 +44,25 @@ cljs.test.set_env_BANG_.call(null,env12748);
 
 cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Symbol(null,"guess-who.test-runner","guess-who.test-runner",471083022,null),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"begin-test-ns","begin-test-ns",-1701237033)], null));
 
-return cljs.test.block.call(null,(function (){var env__11180__auto__ = cljs.test.get_current_env.call(null);
-return cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [((function (env__11180__auto__,env12748,summary12749,reporter__5757__auto___12753){
+return cljs.test.block.call(null,(function (){var env__12114__auto__ = cljs.test.get_current_env.call(null);
+return cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [((function (env__12114__auto__,env12748,summary12749,reporter__5757__auto___12753){
 return (function (){
-if((env__11180__auto__ == null)){
+if((env__12114__auto__ == null)){
 cljs.test.set_env_BANG_.call(null,cljs.test.empty_env.call(null));
 } else {
 }
 
 
 return null;
-});})(env__11180__auto__,env12748,summary12749,reporter__5757__auto___12753))
-], null),cljs.test.test_vars_block.call(null,cljs.core.PersistentVector.EMPTY),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [((function (env__11180__auto__,env12748,summary12749,reporter__5757__auto___12753){
+});})(env__12114__auto__,env12748,summary12749,reporter__5757__auto___12753))
+], null),cljs.test.test_vars_block.call(null,cljs.core.PersistentVector.EMPTY),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [((function (env__12114__auto__,env12748,summary12749,reporter__5757__auto___12753){
 return (function (){
-if((env__11180__auto__ == null)){
+if((env__12114__auto__ == null)){
 return cljs.test.clear_env_BANG_.call(null);
 } else {
 return null;
 }
-});})(env__11180__auto__,env12748,summary12749,reporter__5757__auto___12753))
+});})(env__12114__auto__,env12748,summary12749,reporter__5757__auto___12753))
 ], null));
 })());
 });})(env12748,summary12749,reporter__5757__auto___12753))

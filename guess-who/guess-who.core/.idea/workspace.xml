@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab3a7db-6b97-4c06-a437-8a79c613289b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/public/images/mendelssohn.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guess-who.core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guess-who.core.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev-main-auto-testing.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev-main-auto-testing.js" afterDir="false" />
@@ -137,11 +138,9 @@
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/core.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/core_test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/core_test.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.cljs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.cljs.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.cljs.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/framework.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.cljs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.cljs.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.cljs.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/guess_who/keycodes.js.map" afterDir="false" />
@@ -173,9 +172,21 @@
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/reagent/ratom.cljs.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/reagent/ratom.cljs.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/reagent/ratom.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/reagent/ratom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/public/cljs-out/dev/reagent/ratom.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/cljs-out/dev/reagent/ratom.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/Beethoven.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/Beethoven.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/Handel.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/Handel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/bach.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/bach.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/brahms.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/brahms.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/chopin.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/chopin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/debussy.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/debussy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/liszt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/mendelsohn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/images/mozart.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/images/mozart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guess_who/core.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/guess_who/core.cljs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guess_who/framework.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/guess_who/framework.cljs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guess_who/keycodes.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/guess_who/keycodes.cljs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guess_who/person_generator.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/guess_who/person_generator.cljs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,5 +261,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592075799626">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592075799626" />
   </component>
 </project>

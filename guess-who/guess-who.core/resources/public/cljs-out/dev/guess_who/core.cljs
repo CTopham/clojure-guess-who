@@ -12,7 +12,7 @@
   (vec (repeat n (vec  (repeat n 0))))
   )
 
-(def board-size 3)
+(def board-size 4)
 
 ;; This is the main app state method, this stores our header text, our SVG grid, and our target.
 (defonce app-state
@@ -72,7 +72,7 @@
 (defn grid-html []
   (into
     [:svg
-     {:view-box"0 0 3 3"
+     {:view-box"0 0 4 2"
       :width 1000
       :height 600
       }
@@ -90,7 +90,6 @@
                  (prn :board j i)
                  (swap! app-state assoc-in [:board j i]))}])])
   )
-
 
 
 ;This is the core method that is building our grid
