@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dbbb4d0-26d7-44a7-84df-3f897cc33004" name="Default Changelist" comment="" />
+    <list default="true" id="2dbbb4d0-26d7-44a7-84df-3f897cc33004" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/guess-who.core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guess-who.core/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev-main-auto-testing.js" beforeDir="false" afterPath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev-main-auto-testing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev-main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev/cljsc_opts.edn" beforeDir="false" afterPath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev/cljsc_opts.edn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev/cljsc_opts.json" beforeDir="false" afterPath="$PROJECT_DIR$/guess-who.core/resources/public/cljs-out/dev/cljsc_opts.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
